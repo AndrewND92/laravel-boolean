@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/paste', function () {
+
+  $testo = 'Scrivi qualcosa in pagina';
+  $numeri = '1975';
+
+    return view('paste',compact('testo', 'numeri'));
+});
